@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(253, 245, 168);
+}
+
+img {
+  padding: 5px;
+  border-radius: 5%;
+}
+
+#searchResult {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.boxdiv {
+  display: block;
+  background-color: rgb(220, 236, 233);
+  padding-bottom: 10px;
+  margin: 10px;
+}

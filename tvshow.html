@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tv Show</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="tv show.css" />
+  
+  </head>
+
+  
+    <h1>Tv shows search:</h1>
+    <form id="searchForm">
+      <input type="text " placeholder="type here " name="query" />
+      <button>Search</button>
+      <button id="clear">Clear result</button>
+    </form>
+
+    <div id="searchResult">
+    
+    </div>
+
+    <div id="template-card" style="display: none;">
+      <div class="boxdiv" id='card' >
+        <img src="%SERIE_IMAGE%" alt="">
+        <p class="name">%SERIE_NAME%</p>
+      </div> 
+    </div>
+
+    <script src="tv show.js"></script>
+  </body>
+</html>
