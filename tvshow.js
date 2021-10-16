@@ -57,10 +57,6 @@ const makeCards = (shows) => {
 
 const clearButton = document.querySelector('#clear')
 const deleteImgs = function () {
-    const imgs = document.querySelectorAll('img')
-    for (let img of imgs) {
-        searchResult.innerHTML = ''
-
-    }
+    searchResult.innerHTML = ''
 }
 clearButton.addEventListener('click', deleteImgs)
