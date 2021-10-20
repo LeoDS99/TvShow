@@ -8,9 +8,22 @@ form.addEventListener('submit', async function (e) {
     // makeImages(res.data)
     // makeTitle(res.data)
     makeCards(res.data)
+    console.log(res.data
+
+
+    )
     form.elements.query.value = ''
 })
 
+const buttonRight = document.getElementById('slideRight');
+const buttonLeft = document.getElementById('slideLeft');
+
+buttonRight.onclick = function () {
+    document.getElementById('searchResult').scrollLeft += 20;
+};
+buttonLeft.onclick = function () {
+    document.getElementById('searchResult').scrollLeft -= 20;
+};
 
 
 const makeCards = (shows) => {
@@ -57,10 +70,7 @@ const makeCards = (shows) => {
 
 const clearButton = document.querySelector('#clear')
 const deleteImgs = function () {
-    const imgs = document.querySelectorAll('img')
-    for (let img of imgs) {
-        searchResult.innerHTML = ''
-
-    }
+    searchResult.innerHTML = ''
 }
+
 clearButton.addEventListener('click', deleteImgs)

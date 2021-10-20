@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tv Show</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="tvshow.css" />
-  
-  </head>
 
-  
-    <h1>Tv shows search:</h1>
-    <form id="searchForm">
-      <input type="text " placeholder="type here " name="query" />
-      <button>Search</button>
-      <button id="clear">Clear result</button>
-    </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tv Show</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="tvshow.css" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  </style>
+</head>
+<div class="header">
+  <h1>Search you're favourite show!</h1>
+  <form id="searchForm">
+    <div class="wrap">
+      <div class="search">
+        <input type="text " placeholder="Title here" name="query" class="searchTerm" />
+        <button class="searchButton">Search</button>
+        <button class="deleteButton" id="clear">Clear</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- 
+    <div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+</div> -->
+
+
+
+
+
+
+
+
+<button id="slideLeft" type="button"></button>
 
     <div id="searchResult">
-    
-    </div>
-
+</div>
     <div id="template-card" style="display: none;">
-      <div class="boxdiv" id='card' >
+      <div class="boxdiv" id='card'>
         <img src="%SERIE_IMAGE%" alt="">
         <p class="name">%SERIE_NAME%</p>
-      </div> 
+      </div>
     </div>
-
+    <button id="slideRight" type="button">></button>
     <script src="tvshow.js"></script>
-  </body>
+    </body>
+
 </html>
